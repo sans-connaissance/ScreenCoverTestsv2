@@ -10,32 +10,57 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var sheetMode: SheetMode = .none
+    @State private var monthMode: MonthMode = .bottom
+    @State private var weekMode: WeekMode = .bottom
     
     var body: some View {
         ZStack {
-            FlexibleSheet(sheetMode: $sheetMode) {
+            
+            WeekViewSheet(weekMode: $weekMode) {
+                
                 VStack {
-                    Text("Hello World!")
-                        .foregroundColor(.white)
+                    Button {
+                        switch weekMode {
+                        case .bottom:
+                            weekMode = .top
+                        case .top:
+                            weekMode = .bottom
+                        }
+                    } label: {
+                        Text("Week")
+                    }
                     Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.green)
-                .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+                .background(Color.teal)
+                  .clipShape(RoundedRectangle(cornerRadius: 5.0, style: .continuous))
+ 
+            }
+
+            
+            MonthViewSheet(monthMode: $monthMode) {
+                
+                VStack {
+                    Button {
+                        switch monthMode {
+                        case .bottom:
+                            monthMode = .top
+                        case .top:
+                            monthMode = .bottom
+                        }
+                    } label: {
+                        Text("Month")
+                    }
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                 .background(Color.gray)
+                  .clipShape(RoundedRectangle(cornerRadius: 5.0, style: .continuous))
+ 
             }
             
-            Button("Show") {
-                switch sheetMode {
-                case .none:
-                    sheetMode = .quarter
-                case .quarter:
-                    sheetMode = .half
-                case .half:
-                    sheetMode = .full
-                case .full:
-                    sheetMode = .none
-                }
-            }
+
+
         }
     }
 }
