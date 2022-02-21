@@ -17,6 +17,7 @@ struct ContentView: View {
                 VStack {
                     Text("Hello World!")
                         .foregroundColor(.white)
+                    Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.green)
