@@ -11,6 +11,7 @@
 		4138BFFF27C2DDF200A33680 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138BFFE27C2DDF200A33680 /* ContentView.swift */; };
 		4138C00127C2DDF300A33680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4138C00027C2DDF300A33680 /* Assets.xcassets */; };
 		4138C00427C2DDF300A33680 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4138C00327C2DDF300A33680 /* Preview Assets.xcassets */; };
+		4138C00B27C2DE5900A33680 /* FlexibleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138C00A27C2DE5900A33680 /* FlexibleSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4138BFFE27C2DDF200A33680 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4138C00027C2DDF300A33680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4138C00327C2DDF300A33680 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4138C00A27C2DE5900A33680 /* FlexibleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				4138BFFC27C2DDF200A33680 /* ScreenCoverTestsApp.swift */,
+				4138C00A27C2DE5900A33680 /* FlexibleSheet.swift */,
 				4138BFFE27C2DDF200A33680 /* ContentView.swift */,
 				4138C00027C2DDF300A33680 /* Assets.xcassets */,
 				4138C00227C2DDF300A33680 /* Preview Content */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4138BFFF27C2DDF200A33680 /* ContentView.swift in Sources */,
+				4138C00B27C2DE5900A33680 /* FlexibleSheet.swift in Sources */,
 				4138BFFD27C2DDF200A33680 /* ScreenCoverTestsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
