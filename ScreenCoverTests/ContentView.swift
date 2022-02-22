@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var monthMode: MonthMode = .bottom
     @State private var weekMode: WeekMode = .bottom
     @State private var dayMode: DayMode = .bottom
+    @State private var count = 10
     
     var body: some View {
         ZStack {
@@ -29,10 +30,16 @@ struct ContentView: View {
                             dayMode = .bottom
                             weekMode = .bottom
                             monthMode = .bottom
+                            count = count + 100
                         }
                     } label: {
                         Text("Day")
                     }
+                    Text("HI")
+                    Text("HI")
+                    Text("HI")
+                    Text("HI")
+                    Text("\(count-10)")
                     Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -57,6 +64,11 @@ struct ContentView: View {
                     } label: {
                         Text("Week")
                     }
+                    Text("HI")
+                    Text("HI")
+                    Text("HI")
+                    Text("HI")
+                    Text("\(count)")
                     Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -71,7 +83,6 @@ struct ContentView: View {
                 VStack {
                     Button {
                         
-                        
                         switch monthMode {
                         case .bottom:
                             monthMode = .top
@@ -83,6 +94,11 @@ struct ContentView: View {
                     } label: {
                         Text("Month")
                     }
+                    Text("HI")
+                    Text("HI")
+                    Text("HI")
+                    Text("HI")
+                    Text("\(count)")
                     Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
