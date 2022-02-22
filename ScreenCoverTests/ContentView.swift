@@ -9,12 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var sheetMode: SheetMode = .none
+    
     @State private var monthMode: MonthMode = .bottom
     @State private var weekMode: WeekMode = .bottom
+    @State private var dayMode: DayMode = .bottom
     
     var body: some View {
         ZStack {
+            
+            
+            DayViewSheet(dayMode: $dayMode) {
+                
+                VStack {
+                    Button {
+                        switch dayMode {
+                        case .bottom:
+                            dayMode = .top
+                        case .top:
+                            dayMode = .bottom
+                            weekMode = .bottom
+                            monthMode = .bottom
+                        }
+                    } label: {
+                        Text("Day")
+                    }
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.purple)
+                  .clipShape(RoundedRectangle(cornerRadius: 5.0, style: .continuous))
+ 
+            }
+            
             
             WeekViewSheet(weekMode: $weekMode) {
                 
@@ -23,8 +49,10 @@ struct ContentView: View {
                         switch weekMode {
                         case .bottom:
                             weekMode = .top
+                            dayMode = .top
                         case .top:
                             weekMode = .bottom
+                            monthMode = .bottom
                         }
                     } label: {
                         Text("Week")
@@ -42,9 +70,13 @@ struct ContentView: View {
                 
                 VStack {
                     Button {
+                        
+                        
                         switch monthMode {
                         case .bottom:
                             monthMode = .top
+                            weekMode = .top
+                            dayMode = .top
                         case .top:
                             monthMode = .bottom
                         }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WeekViewSheet<Content: View>: View {
-   
+    
     let content: () -> Content
     var weekMode: Binding<WeekMode>
     
@@ -22,16 +22,16 @@ struct WeekViewSheet<Content: View>: View {
         case .bottom:
             return UIScreen.main.bounds.height - 100
         case .top:
-            return UIScreen.main.bounds.height / 10
+            return UIScreen.main.bounds.height / 15
         }
     }
     
     var body: some View {
         content()
-        .offset(y: calculateOffset())
-        .animation(.spring(), value: weekMode.wrappedValue)
-        .edgesIgnoringSafeArea(.all)
-}
+            .offset(y: calculateOffset())
+            .animation(.spring(), value: weekMode.wrappedValue)
+            .edgesIgnoringSafeArea(.all)
+    }
 }
 
 
