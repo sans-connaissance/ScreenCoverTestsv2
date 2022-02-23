@@ -5,10 +5,12 @@
 //  Created by David Malicke on 2/20/22.
 //
 
+// MAKE THE WHOLE TOP BAR CLICKABLE
 import SwiftUI
 
 struct MonthViewSheet<Content: View>: View {
-    
+    @State private var offset = CGSize.zero
+   
     let content: () -> Content
     var monthMode: Binding<MonthMode>
     
@@ -28,7 +30,10 @@ struct MonthViewSheet<Content: View>: View {
     
     var body: some View {
         content()
+           // .position(y: UIScreen.main.bounds.height )
             .offset(y: calculateOffset())
+
+           // .offset(y: 50.0)
             .animation(.spring(), value: monthMode.wrappedValue)
             .edgesIgnoringSafeArea(.all)
     }

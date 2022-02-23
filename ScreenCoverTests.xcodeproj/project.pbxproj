@@ -15,6 +15,7 @@
 		4138C00D27C33AB400A33680 /* DayViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138C00C27C33AB400A33680 /* DayViewSheet.swift */; };
 		4138C00F27C33ABB00A33680 /* WeekViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138C00E27C33ABB00A33680 /* WeekViewSheet.swift */; };
 		4138C01127C33ACB00A33680 /* MonthViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138C01027C33ACB00A33680 /* MonthViewSheet.swift */; };
+		41C1F5B427C5F6EE00E2C379 /* HourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1F5B327C5F6EE00E2C379 /* HourView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		4138C00C27C33AB400A33680 /* DayViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewSheet.swift; sourceTree = "<group>"; };
 		4138C00E27C33ABB00A33680 /* WeekViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewSheet.swift; sourceTree = "<group>"; };
 		4138C01027C33ACB00A33680 /* MonthViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewSheet.swift; sourceTree = "<group>"; };
+		41C1F5B327C5F6EE00E2C379 /* HourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				4138C00C27C33AB400A33680 /* DayViewSheet.swift */,
 				4138C00E27C33ABB00A33680 /* WeekViewSheet.swift */,
 				4138C01027C33ACB00A33680 /* MonthViewSheet.swift */,
+				41C1F5B327C5F6EE00E2C379 /* HourView.swift */,
 			);
 			path = ScreenCoverTests;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4138BFFF27C2DDF200A33680 /* ContentView.swift in Sources */,
+				41C1F5B427C5F6EE00E2C379 /* HourView.swift in Sources */,
 				4138C01127C33ACB00A33680 /* MonthViewSheet.swift in Sources */,
 				4138C00F27C33ABB00A33680 /* WeekViewSheet.swift in Sources */,
 				4138C00B27C2DE5900A33680 /* FlexibleSheet.swift in Sources */,
