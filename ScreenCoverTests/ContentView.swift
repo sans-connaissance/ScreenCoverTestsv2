@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var weekMode: WeekMode = .bottom
     @State private var dayMode: DayMode = .bottom
     
+    @State private var selectedDay: String?
     
     @State private var count = 10
     
@@ -40,11 +41,16 @@ struct ContentView: View {
                     }
                     List{
                         ForEach(hours, id: \.self) { hour in
-                            HourView(hour: hour)
-                            
+                        
+                            Button {
+                                self.selectedDay = hour
+                            } label: {
+                                HourView(hour: hour)
+                            }
+                            .listRowBackground(self.selectedDay == hour ? Color.gray : Color.white)
                         }
                     }
-                    .listStyle(.inset)
+                    .listStyle(.plain)
                     Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
