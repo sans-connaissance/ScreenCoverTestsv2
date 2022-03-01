@@ -15,7 +15,13 @@ struct ContentView: View {
     @State private var weekMode: WeekMode = .bottom
     @State private var dayMode: DayMode = .bottom
     
-    @State private var selectedDay: String?
+    @State private var selectedHour: String?
+    
+//    @State private var colors: [Color] = []
+//
+//    @State private var color: Color = .white
+    
+    @State var i = 0
     
     @State private var count = 10
     
@@ -39,18 +45,24 @@ struct ContentView: View {
                     } label: {
                         Text("Day")
                     }
-                    List{
-                        ForEach(hours, id: \.self) { hour in
-                        
-                            Button {
-                                self.selectedDay = hour
-                            } label: {
-                                HourView(hour: hour)
-                            }
-                            .listRowBackground(self.selectedDay == hour ? Color.gray : Color.white)
-                        }
-                    }
-                    .listStyle(.plain)
+                    DaySliders()
+//                    List{
+//                        ForEach(hours, id: \.self) { hour in
+//
+//                            Button {
+//                                count = count + 1
+//                                print("\(count)")
+//                                selectedHour = hour
+////                                color = .gray
+////                                colors.append(color)
+//                            } label: {
+//                                HourView(hour: hour)
+//                            }
+//                            //.background(Color.red)
+//                            .listRowBackground(selectedHour == hour ? Color.gray : Color.white)
+//                        }
+//                    }
+//                    .listStyle(.plain)
                     Spacer()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

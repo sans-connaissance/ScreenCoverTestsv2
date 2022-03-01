@@ -15,6 +15,7 @@
 		4138C00D27C33AB400A33680 /* DayViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138C00C27C33AB400A33680 /* DayViewSheet.swift */; };
 		4138C00F27C33ABB00A33680 /* WeekViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138C00E27C33ABB00A33680 /* WeekViewSheet.swift */; };
 		4138C01127C33ACB00A33680 /* MonthViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138C01027C33ACB00A33680 /* MonthViewSheet.swift */; };
+		4151E1CE27CDB511009F4A43 /* DaySliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4151E1CD27CDB511009F4A43 /* DaySliders.swift */; };
 		41C1F5B427C5F6EE00E2C379 /* HourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1F5B327C5F6EE00E2C379 /* HourView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		4138C00C27C33AB400A33680 /* DayViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewSheet.swift; sourceTree = "<group>"; };
 		4138C00E27C33ABB00A33680 /* WeekViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewSheet.swift; sourceTree = "<group>"; };
 		4138C01027C33ACB00A33680 /* MonthViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewSheet.swift; sourceTree = "<group>"; };
+		4151E1CD27CDB511009F4A43 /* DaySliders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySliders.swift; sourceTree = "<group>"; };
 		41C1F5B327C5F6EE00E2C379 /* HourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 			children = (
 				4138BFFC27C2DDF200A33680 /* ScreenCoverTestsApp.swift */,
 				4138C00A27C2DE5900A33680 /* FlexibleSheet.swift */,
+				4151E1CD27CDB511009F4A43 /* DaySliders.swift */,
 				4138BFFE27C2DDF200A33680 /* ContentView.swift */,
 				4138C00027C2DDF300A33680 /* Assets.xcassets */,
 				4138C00227C2DDF300A33680 /* Preview Content */,
@@ -159,6 +162,7 @@
 				4138C00B27C2DE5900A33680 /* FlexibleSheet.swift in Sources */,
 				4138BFFD27C2DDF200A33680 /* ScreenCoverTestsApp.swift in Sources */,
 				4138C00D27C33AB400A33680 /* DayViewSheet.swift in Sources */,
+				4151E1CE27CDB511009F4A43 /* DaySliders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

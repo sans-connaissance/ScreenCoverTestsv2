@@ -10,7 +10,7 @@ import SwiftUI
 struct HourView: View {
     
     var hour: String
-    //var color: Color = .white
+  // @State var color: Color
     
     var body: some View {
         HStack {
@@ -22,7 +22,7 @@ struct HourView: View {
                 //.fontWeight(.bold)
             Spacer()
         }
-        //.listRowBackground(color)
+       // .listRowBackground(color)
     }
 }
 
